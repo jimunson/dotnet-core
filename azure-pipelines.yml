@@ -1,4 +1,10 @@
 # ASP.NET Core
+- task: AzureKeyVault@1
+  inputs:
+    azureSubscription: 'Jill-Airs-OH12rg'
+    KeyVaultName: 'openhack12kv'
+    SecretsFilter: '*'
+    RunAsPreJob: true
 # Build and test ASP.NET Core projects targeting .NET Core.
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
